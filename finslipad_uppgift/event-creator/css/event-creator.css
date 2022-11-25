@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "sidebar main right";
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.container .main-content {
+  grid-area: main;
+  min-height: 100vh;
+}
+.container .main-content .header {
+  border-bottom: 1px solid white;
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+  text-shadow: 2px 1px rgb(201, 110, 110);
+  padding: 0.1rem;
+}
+.container .main-content .enter-info-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 75%;
+}
+.container .main-content .enter-info-form label {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin-top: 5rem;
+  margin-left: 18rem;
+}
+.container .main-content .enter-info-form input {
+  margin-left: 18rem;
+}
+.container .main-content .enter-info-form input#name-input {
+  height: 35px;
+}
+.container .main-content .enter-info-form input#date-input {
+  height: 35px;
+}
+.container .main-content .enter-info-form textarea#description-input {
+  margin-left: 18rem;
+  height: 75px;
+}
+.container .main-content .enter-info-form textarea#agenda-input {
+  margin-left: 18rem;
+  height: 125px;
+}
+.container .main-content .file-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 5rem 0;
+}
+.container .main-content .file-form .file-btn {
+  margin-bottom: 2rem;
+}
+.container .main-content .file-form .submit-btn {
+  width: 75px;
+}
+
+.side-nav > * {
+  grid-area: sidebar;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 6.3rem;
+  margin-right: 4rem;
+}
+.side-nav > * li {
+  color: rgb(255, 255, 255);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 2.15rem;
+}
+.side-nav > * li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.side-nav > * li:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 485px) {
+  .bg-img {
+    min-width: 485px;
+  }
+}/*# sourceMappingURL=event-creator.css.map */
